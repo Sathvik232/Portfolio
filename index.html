@@ -142,11 +142,11 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -270,17 +270,43 @@
     </footer>
 
     <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
+        document.querySelectorAll('.nav-link').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const sectionId = this.getAttribute('href');
                 const section = document.querySelector(sectionId);
-                const headerOffset = document.querySelector('header').offsetHeight;
-                const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
-                window.scrollTo({
-                    top: sectionPosition - headerOffset,
-                    behavior: 'smooth'
-                });
+                if (section) {
+                    const headerOffset = document.querySelector('.fixed-header').offsetHeight;
+                    const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({
+                        top: sectionPosition - headerOffset - 20, // Extra 20px padding for better alignment
+                        behavior: 'smooth'
+                    });
+                    // Update active class
+                    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Highlight active section on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            let currentSection = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; // Adjust for header
+                if (window.pageYOffset >= sectionTop) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
             });
         });
     </script>
