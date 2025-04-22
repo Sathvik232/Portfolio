@@ -129,132 +129,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sathvik S Kashyap | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="user">
-            <img src="photo.jpeg" alt="Sathvik's Photo">
-            <h1 class="nm">Sathvik S Kashyap</h1>
-            <p class="jb">Full Stack Developer</p>
+        <div class="container">
+            <div class="user">
+                <img src="photo.jpeg" alt="Sathvik's Photo">
+                <h1>Sathvik S Kashyap</h1>
+                <p>Full Stack Developer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nv">
-            <ul>
-                <li><a href="#Details">About</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="Details" class="section">
-            <h2>About Me</h2>
-            <p>Hello! I'm Sathvik, a passionate Full Stack Developer skilled in Java, ReactJS, and Django. I build scalable web applications and enjoy solving complex problems with efficient code.</p>
-            <ul class="contact-info">
-                <li><strong>Email:</strong> sathvikkashyap111@gmail.com</li>
-                <li><strong>Phone:</strong> +91 8277325232</li>
-                <li><strong>Location:</strong> Bengaluru, Karnataka, India</li>
-            </ul>
-        </section>
-
-        <section id="Education" class="section">
-            <h2>Education</h2>
-            <ul class="education-list">
-                <li>
-                    <strong>BE</strong> - Malnad College of Engineering, VTU
-                    <span>7.12 CGPA</span>
-                </li>
-                <li>
-                    <strong>PUC</strong> - Brilliant PU College
-                    <span>84%</span>
-                </li>
-                <li>
-                    <strong>SSLC</strong> - Holy Mother High School
-                    <span>78%</span>
-                </li>
-            </ul>
-        </section>
-
-        <section id="Skills" class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>Python (Django)</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <ul>
-                        <li>ReactJS</li>
-                        <li>Next.js</li>
-                        <li>React Native</li>
-                        <li>HTML/CSS</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <ul>
-                        <li>MySQL</li>
-                        <li>SQL</li>
-                        <li>CockroachDB</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Testing</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Figma</li>
-                        <li>Canva</li>
-                        <li>Selenium</li>
-                        <li>Manual Testing</li>
-                    </ul>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hi, I'm Sathvik, a dedicated Full Stack Developer with expertise in Java, ReactJS, and Django. I specialize in crafting scalable web applications and solving complex technical challenges with clean, efficient code.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> sathvikkashyap111@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 8277325232</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India</p>
                 </div>
             </div>
         </section>
 
-        <section id="Projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <h3>Blood Bank Management System</h3>
-                    <p>Developed an SQL-based system to manage donor and recipient records. Improved data search by 50%.</p>
-                </div>
-                <div class="project">
-                    <h3>School Management System</h3>
-                    <p>Web-based application to centralize student and teacher records, reducing paperwork by 70%.</p>
-                </div>
-                <div class="project">
-                    <h3>Data Structure Visualizer</h3>
-                    <p>Java Swing app demonstrating linear data structures using OOP concepts and visual simulations.</p>
+        <section id="education" class="section">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <h3>BE - Computer Science</h3>
+                        <p>Malnad College of Engineering, VTU</p>
+                        <p>CGPA: 7.12</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>PUC</h3>
+                        <p>Brilliant PU College</p>
+                        <p>Percentage: 84%</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>SSLC</h3>
+                        <p>Holy Mother High School</p>
+                        <p>Percentage: 78%</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="Contact" class="section">
-            <h2>Contact</h2>
-            <p>You can connect with me via:</p>
-            <ul class="contact-links">
-                <li>Email: <a href="mailto:sathvikkashyap111@gmail.com">sathvikkashyap111@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/sathvik-s-kashyap" target="_blank">linkedin.com/in/sathvik-s-kashyap</a></li>
-                <li>GitHub: <a href="https://github.com/Sathvik232" target="_blank">github.com/Sathvik232</a></li>
-            </ul>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python (Django)</li>
+  <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Web Technologies</h3>
+                        <ul>
+                            <li>ReactJS</li>
+                            <li>Next.js</li>
+                            <li>React Native</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Databases</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>SQL</li>
+                            <li>CockroachDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools & Testing</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>Figma</li>
+                            <li>Canva</li>
+                            <li>Selenium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Blood Bank Management System</h3>
+                        <p>An SQL-based system for managing donor and recipient records, improving data retrieval efficiency by 50%.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>School Management System</h3>
+                        <p>A web application to streamline student and teacher record management, reducing paperwork by 70%.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Data Structure Visualizer</h3>
+                        <p>A Java Swing application showcasing linear data structures through interactive visual simulations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Let's connect! Reach out to me through:</p>
+                <div class="contact-links">
+                    <a href="mailto:sathvikkashyap111@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://www.linkedin.com/in/sathvik-s-kashyap" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/Sathvik232" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Sathvik S Kashyap. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Sathvik S Kashyap. All rights reserved.</p>
+        </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('.nv a').forEach(anchor => {
+        document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const sectionId = this.getAttribute('href');
