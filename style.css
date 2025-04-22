@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     outline: none;
@@ -191,7 +191,137 @@ table{
     font-weight: normal;
 }
 
+
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #eee;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #333;
+}
+
+.user img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid yellowgreen;
+    margin-bottom: 1rem;
+}
+
+.nm {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.jb {
+    font-size: 1.4rem;
+    color: yellow;
+    margin-bottom: 1rem;
+}
+
+.nv ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nv ul li a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.nv ul li a:hover {
+    background-color: yellowgreen;
+    color: #111;
+}
+
+main {
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: yellowgreen;
+    border-bottom: 2px solid #555;
+    padding-bottom: 0.5rem;
+}
+
+.section ul, .section p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.project h3 {
+    color: #eee;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.project p {
+    margin-left: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .nv ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    header .user img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
 .Project .Row .det h3 span{
     color: #eee;
     padding: 0. 5rem;
-}
+} */
