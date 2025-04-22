@@ -261,11 +261,20 @@ nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 400;
-    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: #00bcd4;
+    background-color: #00bcd4;
+    color: #121212;
+}
+
+nav a.active {
+    background-color: #00bcd4;
+    color: #121212;
+    font-weight: 600;
 }
 
 .section {
