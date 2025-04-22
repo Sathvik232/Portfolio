@@ -133,7 +133,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header class="fixed-header">
         <div class="container">
             <div class="user">
                 <img src="photo.jpeg" alt="Sathvik's Photo">
@@ -197,7 +197,7 @@
                         <ul>
                             <li>Java</li>
                             <li>Python (Django)</li>
-  <li>JavaScript</li>
+                            <li>JavaScript</li>
                         </ul>
                     </div>
                     <div class="skill-card">
@@ -265,7 +265,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Sathvik S Kashyap. All rights reserved.</p>
+            <p>© 2025 Sathvik S Kashyap. All rights reserved.</p>
         </div>
     </footer>
 
@@ -275,7 +275,12 @@
                 e.preventDefault();
                 const sectionId = this.getAttribute('href');
                 const section = document.querySelector(sectionId);
-                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const headerOffset = document.querySelector('header').offsetHeight;
+                const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: sectionPosition - headerOffset,
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
