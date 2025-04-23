@@ -1,3 +1,4 @@
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +79,8 @@ nav a:hover {
 }
 
 .section {
-  padding: 6rem 0 4rem;
+  padding: 7rem 0 5rem;
+  scroll-margin-top: 100px;
 }
 
 h2 {
@@ -101,9 +103,9 @@ p {
 
 .education-list,
 .skills-grid,
-.projects-grid {
-  display: flex;
-  flex-direction: column;
+.projects-grid,
+#certifications .education-list {
+  display: grid;
   gap: 1.5rem;
 }
 
@@ -165,7 +167,7 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* Tablet & Desktop View */
+/* Responsive Grid Layouts */
 @media (min-width: 768px) {
   .user img {
     width: 70px;
@@ -187,68 +189,13 @@ footer p {
   nav a {
     font-size: 1.1rem;
   }
-
-  .skills-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .skills-grid > .skill-card {
-    flex: 1 1 calc(50% - 1rem);
-  }
-
-  .projects-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .projects-grid > .project-card {
-    flex: 1 1 calc(50% - 1rem);
-  }
-
-  .education-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .education-item {
-    flex: 1 1 calc(33.333% - 1rem);
-  }
-
-  .contact-links {
-    flex-direction: row;
-    justify-content: center;
-  }
 }
 
-/* Desktop Wide Screens */
-@media (min-width: 1200px) {
-  .skills-grid > .skill-card {
-    flex: 1 1 calc(25% - 1rem);
+@media (min-width: 1024px) {
+  .skills-grid,
+  .education-list,
+  .projects-grid,
+  #certifications .education-list {
+    grid-template-columns: repeat(4, 1fr);
   }
-
-  .projects-grid > .project-card {
-    flex: 1 1 calc(33.333% - 1rem);
-  }
-}
-.section {
-    padding: 7rem 0 5rem;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1200px) {
-    .skills-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
