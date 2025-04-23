@@ -211,6 +211,7 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+    margin-top:70px;
 }
 
 .fixed-header {
@@ -228,6 +229,14 @@ header .container {
   align-items: center;
   padding: 1rem 0;
   flex-wrap: wrap;
+}
+.container1{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+    
 }
 
 .user {
@@ -299,6 +308,17 @@ p {
 .projects-grid {
   display: grid;
   gap: 1.2rem;
+}
+
+.skills-grid{
+    display: grid;
+    gap: 1rem;
+}
+.skill-card{
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
 
 .education-item,
