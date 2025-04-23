@@ -107,6 +107,7 @@ p {
 #certifications .education-list {
   display: grid;
   gap: 1.5rem;
+  grid-template-columns: 1fr;
 }
 
 .education-item,
@@ -192,10 +193,30 @@ footer p {
 }
 
 @media (min-width: 1024px) {
-  .skills-grid,
-  .education-list,
-  .projects-grid,
-  #certifications .education-list {
+  .skills-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .education-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #certifications .education-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .education-list,
+  .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #certifications .education-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
