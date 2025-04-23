@@ -211,7 +211,10 @@ footer p {
 }
 
 @media (min-width: 1400px) {
-  .education-list,
+  .education-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .projects-grid {
     grid-template-columns: repeat(4, 1fr);
   }
