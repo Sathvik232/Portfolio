@@ -211,15 +211,31 @@ footer p {
 }
 
 @media (min-width: 1400px) {
-  .education-list {
+  .skills-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .education-list {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
   }
 
   .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
   }
 
   #certifications .education-list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
+}
+
+/* Ensure About Me visibility */
+#about {
+  display: block;
+  width: 100%;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  scroll-margin-top: 100px;
 }
