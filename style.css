@@ -297,16 +297,15 @@ p {
 .education-list,
 .skills-grid,
 .projects-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  gap: 1.2rem;
 }
 
 .education-item,
 .skill-card,
 .project-card {
   background-color: #1e1e1e;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 8px;
   transition: transform 0.3s;
 }
